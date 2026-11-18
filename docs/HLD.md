@@ -231,7 +231,7 @@ sequenceDiagram
     BR-->>API: Query vector
     API->>PC: Similarity search in tenant namespace (over-fetch candidates)
     PC-->>API: Ranked candidate chunk IDs and scores
-    API->>PG: Load candidate chunks; verify tenant and ACTIVE document status
+    API->>PG: Load candidate chunks and verify tenant and ACTIVE document status
     PG-->>API: Authoritative chunk text and citation metadata
     API->>BR: Generate answer from numbered retrieved passages
     BR-->>API: Answer with [S#] citation markers
