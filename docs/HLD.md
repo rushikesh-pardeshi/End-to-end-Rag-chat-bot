@@ -181,7 +181,7 @@ sequenceDiagram
     W->>BR: Generate Titan embeddings
     BR-->>W: 1,024-dimensional vectors
     W->>PC: Upsert vectors into tenant namespace
-    W->>PG: Mark chunks embedded; set document ACTIVE; audit result
+    W->>PG: Mark chunks embedded, set document ACTIVE, and record audit result
 ```
 
 Implementation notes:
