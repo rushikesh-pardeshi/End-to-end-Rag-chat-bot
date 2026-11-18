@@ -3,7 +3,7 @@
 
 <div align="center">
 
-# DocQuery
+# NEXORA AI 
 
 Ask natural-language questions over uploaded documents and get answers with source citations and audit logs.
 
